@@ -12,6 +12,9 @@ export const logout = (data: { refresh_token: string }) =>
 export const verifyOrganization = (data: { username: string }) =>
   request.post("/verifyorganization", data);
 
+export const verifyEmail = (data: { username: string; verificationcode: string}) =>
+  request.post("/verifyemail", data);
+
 export const register = (data: {
   username: string;
   password: string;

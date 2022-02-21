@@ -8,6 +8,7 @@ import { PublicRoute, PrivateRoute, AdminRoute } from "containers/Routes";
 
 // Public Pages
 // const Login = lazy(() => import("./Login"));
+import EmailVerification from "./EmailVerification"
 import Login from "./Login";
 import Register from "./Register";
 import Home from "./Home";
@@ -25,6 +26,7 @@ const Pages = () => {
       <Switch>
         {/* Public routes */}
         <PublicRoute path={Routes.login} component={Login} />
+        <PublicRoute path={Routes.emailverification} component={EmailVerification} />
         <PublicRoute path={Routes.adminLogin} component={AdminLogin} />
         <PublicRoute path={Routes.register} component={Register} />
 
